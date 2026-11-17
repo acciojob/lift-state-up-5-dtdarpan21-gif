@@ -3,9 +3,14 @@ import React from "react";
 import './../styles/App.css';
 
 const App = () => {
+  const [ isLoggedIn, setIsLoggedIn] = useState(false);
   return (
     <div>
-        {/* Do not remove the main div */}
+        <Login 
+        isLoggedIn ={isLoggedIn}
+        setIsLoggedIn = {setIsLoggedIn}
+        />
+
     </div>
   )
 }
